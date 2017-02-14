@@ -1,7 +1,9 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "styles/home.scss";
+
+// controller랑 같이 생성되는 이 scss 파일을 경유해서 다른 css파일들을 import 시킬 수도 있는 것 같다. 다음과 같이 입력하면 home.scss가 적용된다. 우선순위는 import된 것이 더 높은듯. 써있는 순서때문인가?
+// @import "styles/home.scss";
 
 
 body {
@@ -10,6 +12,6 @@ body {
 
 $canIUseThis: red;
 
-// .container {
-//   background-color: $canIUseThis;
-// }
+.container {
+  background-color: $canIUseThis;
+}
