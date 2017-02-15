@@ -1,10 +1,9 @@
 <!-- stylesheets 폴더 아래 style이라는 폴더를 새로 만들고 다음과같이 경로를 추가하면 css가 먹힌다(경로를 레일즈가 알아서 잡는다는거겠지?). 해본 결과 scss, css 모두 사용가능하다. 이렇게 임포트하고 어떤게 적용되는지 봐도 main.scss이 아니라 home.scss가 적용된다. -->
 <%=  stylesheet_link_tag "home" %>
 
-
-<header>
-  <div class="logo"></div>
-  <nav>
+<div class="header overlay overlay-color">
+  <div class="logo">LEEBOM's HOME</div>
+  <nav class="navbar">
     <ul>
       <li class="nav-items">HOME</li>
       <li class="nav-items">ABOUT</li>
@@ -13,8 +12,10 @@
       <li class="nav-items">CONTACT</li>
     </ul>
   </nav>
-  <h1>Magic is something you create.</h1>
-</header>
+  <div>
+    <h1>Magic is something you create.</h1>
+  </div>
+</div>
 <section class="container home-images">
   <div class="row">
     <div class="item1"></div>

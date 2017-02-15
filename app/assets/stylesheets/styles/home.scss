@@ -2,5 +2,40 @@
   background-color: gray;
 }
 
+.header {
+  display: inline-block;
+  width: 100%;
+  min-height: 100vh;
+
+  // rails에서 background image의 url은 다음과 같이 넣는다.
+  background-image: image-url("0.jpg");
+
+  background-size: cover;
+  background-position: 50% 80%;
+  position: absolute;
+
+
+  * {
+    position: relative;
+    color: white;
+  }
+}
+.overlay {
+  position: relative;
+  &:before {
+    position: absolute;
+    content:" ";
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    display: block;
+    z-index:0;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
+
+
 
 /*우선순위 application.css(레이아웃) > home.css(import된 css) > main.css*/
